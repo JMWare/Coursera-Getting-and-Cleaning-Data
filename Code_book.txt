@@ -1,0 +1,45 @@
+Analysis of a data set derived from the Human Activity Recognition 
+Using Smartphones project. 
+
+The source data set is a table of 10299 rows x 561 columns containing 
+velocity and acceleration measurements recorded from 30 subjects 
+performing six different activities of daily living (ADL) 
+while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+A description of the methodology of the project can be found at :-
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The table was divided into two files designated 'training' and 'test' 
+measurements, there were associated files containing information on 
+subject ID, activity ID, activity description, and descriptive column headings.
+
+Method of analysis
+
+It was required to extract from the data all columns containing the text 
+'mean' or 'std' (standard deviation) in the column headings and to calculate 
+the mean values of all these measurements for each subject perfoming each activity .
+
+The 'training' and 'test' data files were merged, the subset of columns required 
+was determined by matching the text 'mean' and .std' in the column heading file 
+and a data file (X_merged.txt) was constructed, ordered using activity ID as 
+primay key and  subject ID as secondary key, and containing 10299 rows with 
+columns for :-
+
+Activity description
+Subject ID
+79 columns of measurements on 'mean' and 'std'
+
+The means of the measurements on each of the 30 subjects performing each of the 
+six activities was calculated and a file (Activity_means.txt) of 180 rows x 81 
+columns constructed.
+
+Citation :
+
+The source data for the project are derived from the Human Activity Recognition 
+Using Smartphones project by :- 
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
+Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly 
+Support Vector Machine. 
+International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, 
+Spain. Dec 2012
