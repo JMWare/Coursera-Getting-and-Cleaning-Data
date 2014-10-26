@@ -1,5 +1,7 @@
 Coursera-Getting-and-Cleaning-Data
 ==================================
+Course Project
+==============
 R script - run_analysis.R
 -------------------------
 The script contains two main functions which are commented to explain their operation:-
